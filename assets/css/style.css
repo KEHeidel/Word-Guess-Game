@@ -1,0 +1,11 @@
+body {
+    background-image: url("../images/Library-Computer-Backgrounds.jpg");
+}
+
+header {
+    text-align: center;
+    color: ivory;
+    font-size: 150px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
