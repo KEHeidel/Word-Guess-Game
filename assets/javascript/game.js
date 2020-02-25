@@ -54,8 +54,7 @@ document.onkeyup = function(event) {
   var userkey = event.key.toUpperCase();
   document.querySelector("#word").innerHTML = begininggame.join(" ");
   if (guessindex > 1) {
-    // document.querySelector("#word").innerHTML = begininggame.join(" ");
-    if (guessedletters.indexOf(userkey) === -1) {
+      if (guessedletters.indexOf(userkey) === -1) {
       if (
         wordletters.indexOf(userkey) === -1 &&
         wordletters.indexOf(userkey.toLowerCase()) === -1
@@ -69,10 +68,6 @@ document.onkeyup = function(event) {
         for (var i = 0; i < wordletters.length; i++) {
           if (userkey === wordletters[i].toUpperCase()) {
             begininggame[i] = wordletters[i];
-            // if (JSON.stringify(begininggame) == JSON.stringify(wordletters)) {
-            //   score++;
-            //   randomauthgen("Correct");
-            // }
           }
         }
         if (JSON.stringify(begininggame) == JSON.stringify(wordletters)) {
@@ -85,7 +80,7 @@ document.onkeyup = function(event) {
       }
     }
   }
-  // document.querySelector("#word").innerHTML = begininggame.join(" ");
+
   document.querySelector("#numberguesses").innerHTML = numberguesses;
   document.querySelector("#score").innerHTML = score;
   document.querySelector("#lettersguessed").innerHTML = guessedletters;
